@@ -1,0 +1,6 @@
+const KeyObject = [{
+  	'(document: keydown.ALT.a)': 'hotkeys($event, "Command + a")',
+  	'(document: keydown.ALT.s)': 'hotkeys($event, "Command + s")',
+  	'(document: keydown.control.ALT.d)': 'hotkeys($event, "CTRL+ALT+D")',
+  	'(document: keydown.control.r)': 'hotkeys($event, "Command + r")'
+  }]

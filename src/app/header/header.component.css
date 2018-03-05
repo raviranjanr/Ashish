@@ -1,0 +1,58 @@
+.glyphicon-off {
+  padding: 14px 10px !important;
+  margin: 2px 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.tableHeader tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.tableHeader tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+th {
+  background-color: #ffffff;
+}
+
+thead tr th {
+  background: #23496d !important;
+  color: #FFF;
+}
+
+.table-bordered>tbody>tr>td {
+  border: 1px solid #3c763d;
+  border: 1px solid #3c763d;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+
+.glyphicon-list-alt {
+  padding: 14px 10px !important;
+  margin: 2px 5px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*.table-bordered[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1] {
+    border: 1px solid #3c763d;
+    border: 1px solid #3c763d;
+    padding: 5px 10px;
+    font-size: 17px;
+    position: relative;
+    z-index: 555;
+    width: 100%;
+}*/
+
+.tableHeader {
+    position: absolute;
+    table-layout: fixed;
+    width: 35%;
+    z-index: 9;
+    box-shadow: 2px 3px 39px 3px #333;
+    right: 15px;
+
+}

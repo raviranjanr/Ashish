@@ -1,0 +1,31 @@
+textarea {
+  resize: none;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+
+/*.textareaBody {
+	width: 80%;
+	background-color: #8d9e8d;
+}*/
+
+.outer {
+  /*background-color: #8d9e8d;*/
+  width: auto;
+  height: auto;
+}
+[hidden] {
+  display: none !important;
+}
+.blogButton {
+  padding: 10px 0px;
+  text-align: center;
+}
+.add {
+	text-align: center !important;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+}

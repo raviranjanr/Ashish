@@ -1,0 +1,17 @@
+<!-- <app-header></app-header>
+<div *ngIf="successFlag" class="alert alert-success fade in">
+  <strong>Success!</strong> Addedd Successfully.
+</div>
+<router-outlet></router-outlet>
+ -->
+
+ <!-- <input 
+    (keydown.control.r)="onKey($event, 'Control + r')"> -->
+ <div *ngIf="initializeModel.initializeFlag">
+      <!-- <div (keydown.control.r)="onKey($event, 'Control + m')"> -->
+    <!--   	<div (click,submit,mouseenter)="onKey($event, $event)"> -->
+      <app-header></app-header>
+      <button id="btnAlt" (click)="pressAlt()">ALT</button>
+  <!-- </div> -->
+  </div>
+  <router-outlet></router-outlet>

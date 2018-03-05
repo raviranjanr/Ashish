@@ -1,0 +1,52 @@
+<!-- <p>
+  signup works!
+</p> -->
+<div class="container">
+  <div class="row">
+    <div class="">
+      <div class="col-lg-4 center-block border_line">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" [(ngModel)]="signUpModel.signUpFirstName" class="form-control" name="email" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" [(ngModel)]="signUpModel.signUpEail" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" [(ngModel)]="signUpModel.signUpPassword" class="form-control" name="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" [(ngModel)]="signUpModel.signUpConfirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm Password">
+          </div>
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="number" id="mobileNumber" [(ngModel)]="signUpModel.signUpMobileNumber" class="form-control" name="Mobile Number" placeholder="Mobile Number">
+          </div>
+          <div class="form-group">
+            <label for="DOB">D.O.B</label>
+            <input type="date" id="DOB" [(ngModel)]="signUpModel.signUpDOB" class="form-control" name="DATE OF BIRTH" placeholder="Date of Birth">
+          </div>
+          <div class="form-group" appDropDown>
+            <label for="securityQuestion"> Security Question </label>
+            <select (change)="onSelecte($event.target.value)" [(ngModel)]="flag" id="securityQuestion" class="form-control">
+              <option value = "">Select</option>
+              <option *ngFor="let _question of dropDownArray" value={{_question.id}}>
+                {{_question.question}}
+              </option>
+            </select>
+          </div>
+          <div *ngIf="answerFlag" class="form-group">
+            <label for="answer">Answer</label>
+            <input type="text" id="answer" [(ngModel)]="signUpModel.answer" class="form-control" name="answer" placeholder="Answer">
+          </div>
+          <br>
+          <button type="button" class="btn btn-success" (click)="signUpUser()"> Sign Up </button>
+          <a routerLink="/login" routerLinkActive="active"> <strong>Login</strong> </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf= "notificationFlag"><app-notification></app-notification></div>

@@ -1,0 +1,12 @@
+.form-group .form-control {
+	margin-bottom: 5px;
+}
+
+.form-group {
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+.securityQuestion option {
+	padding: 2px 0px;
+}

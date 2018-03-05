@@ -1,0 +1,34 @@
+<!-- <p>
+  login works!
+</p> -->
+<div class="container">
+  <div class="row">
+    <div class="">
+      <div *ngIf= "notificationFlag"><app-notification></app-notification></div>
+      
+      <div class="col-lg-4 center-block border_line">
+        <form #fLogin="ngForm" (ngSubmit)="onSaveLogin(fLogin.value)">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" [(ngModel)]="loginModel.loginEail" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group ">
+            <label for="pswd">Password</label>
+            <input type="password" id="pswd" [(ngModel)]="loginModel.loginPassword" class="form-control" name="password" placeholder="Password">
+          </div>
+          <div class="form-group ">
+            <label for="pswd">Password</label>
+            <input type="text" class="form-control capatcha" [ngModelOptions]="{standalone: true}" [(ngModel)]="displayCapatcha" disabled>
+            <button type="button" class="btn btn-success refresh" (click)="generateCaptcha()"> Refresh </button>  
+            <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="capatcha">
+          </div>
+          <br>
+          <button type="button" class="btn btn-success" (click)="loginUser()"> Login </button>
+  
+          <a [routerLink]="['/forgot']" ><strong>Forgot Password?</strong></a> / New member?<a routerLink="/signup" routerLinkActive="active"><strong>Sign Up</strong></a>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

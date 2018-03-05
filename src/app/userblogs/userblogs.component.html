@@ -1,0 +1,16 @@
+<div class="outer">
+  <div class="textareaBody">
+    <div class="col-lg-12">
+      <div class="col-lg-3" *ngFor="let blogItem of blogList; let i = index">
+        <textarea rows="4" cols="40" maxlength="244" placeholder="Describe yourself here..." [(ngModel)]="blogItem.text" [disabled]="disableFlag[i]">
+        </textarea>
+        <div class="blogButton">
+          <button class="btn btn-primary" (click)="saveTextArea(i, blogItem.text)">Save</button>
+          <button class="btn btn-primary" *ngIf="hideEdit[i]" (click)="editTextArea(i)">Edit</button>
+          <button class="btn btn-primary" *ngIf="hideCancel[i]" (click)="cancelTextArea(i)">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <button *ngIf="addFlag" class="btn btn-danger add" (click)="addTextArea()"><strong>Add more +</strong></button>
+  </div>
+</div>

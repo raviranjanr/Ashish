@@ -1,0 +1,16 @@
+<!-- <p>
+  profile works!
+</p> -->
+
+
+<div class="container form-group">
+	<h1>
+  {{profileData.firstName}}
+</h1>
+  <input type="text" [(ngModel)]="profileData.firstName" class="form-control" name="Name" placeholder="First Name">
+  <input [disabled]="true" type="text" [(ngModel)]="profileData.email" class="form-control" name="Email" placeholder="EMAIL">
+  <input type="number" [(ngModel)]="profileData.mobileNumber" class="form-control" name="Mobile Number" placeholder="MOBILE NUMBER">
+  <input type="date" [(ngModel)]="profileData.dob" class="form-control" name="DATE OF BIRTH" placeholder="DATE OF BIRTH">
+    
+  <button class="btn btn-primary" (click)="updateProfile($event)">Update</button>  
+</div>

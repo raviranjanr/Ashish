@@ -1,0 +1,11 @@
+<!-- <p>
+  notification works!
+</p> -->
+<div class="alert alert-success alert-dismissable" *ngIf="notificationType == 'success' ">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> {{msg}}!
+</div>
+<div class="alert alert-danger alert-dismissable" *ngIf="notificationType == 'error' ">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Warning!</strong> {{msg}}!
+</div>

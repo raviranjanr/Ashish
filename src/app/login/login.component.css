@@ -1,0 +1,24 @@
+.col-lg-4.center-block {
+  float: none !important;
+}
+
+.border_line {
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.col-lg-4.center-block {
+  float: none !important;
+}
+
+.border_line {
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+  border-radius: 5px;
+}
+.capatcha {
+	background-color: #95c8d4;
+    width: 195px;
+    font-size: 42px;
+}

@@ -1,0 +1,35 @@
+<div class="container form-group">
+  <h1>
+  {{title}}
+</h1>
+  <input type="text" [(ngModel)]="model.userName" class="form-control" name="UserName" placeholder="USER NAME">
+  <input type="text" [(ngModel)]="model.firstName" class="form-control" name="FirstName" placeholder="FIRST NAME">
+  <input type="text" [(ngModel)]="model.lastName" class="form-control" name="LastName" placeholder="SECOND NAME">
+  <input type="text" [(ngModel)]="model.userEmail" class="form-control" name="Email" placeholder="EMAIL">
+  <input type="password" [(ngModel)]="model.password" class="form-control" name="Password" placeholder="PASSWORD" onCopy="return false" onPaste="return false" onCut="return false" onselectstart="return false" onDrop="return false" onDrag="return false">
+  <input type="password" [(ngModel)]="model.confirmPassword" class="form-control" name="ConfirmPassword" placeholder="CONFIRM PASSWORD" onCopy="return false" onPaste="return false" onCut="return false" onselectstart="return false" onDrop="return false" onDrag="return false">
+  <input type="number" [(ngModel)]="model.number" class="form-control" name="Mobile Number" placeholder="MOBILE NUMBER">
+  <!-- <input id="datePicker" class="form-control" >  -->
+  <!-- <input ngbDatepicker #d="ngbDatePicker" (focus)="d.open()" >  -->
+  <!-- <div class="form-group" appDropDown>
+    <label for="securityQuestion"> Security Question </label>
+    <select (change)="onSelecte($event.target.value)" [(ngModel)]="selectedQuestion.id" id="securityQuestion" class="form-control">
+      <option *ngFor="let _question of dropDownArray" value={{_question.id}} >
+        {{_question.question}}
+      </option>
+    </select>
+  </div> -->
+  <div>
+    <!-- <span *ngIf="nameFlag; else otherPart"></span>
+    <ng-template #otherPart>
+      <p>No User Registered</p>
+    </ng-template> -->
+    <button class="btn btn-primary" (click)="getFormDetails($event)">Submit</button>
+  </div>
+  <!-- <div *ngIf="nameFlag">
+    <div *ngFor="let detail of usersArray">
+      <p>{{detail.name}}</p>
+    </div>
+  </div> -->
+</div>
+<div *ngIf= "notificationFlag"><app-notification></app-notification></div>
